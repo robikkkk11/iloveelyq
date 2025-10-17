@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #ffebf0;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #e91e63;
+}
+
+.heart {
+  color: red;
+  animation: beat 1s infinite;
+}
+
+@keyframes beat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
