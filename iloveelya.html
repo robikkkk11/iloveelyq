@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Я люблю Элю</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #ffebf0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .heart-text {
+    font-size: 4rem;
+    color: #e91e63;
+    position: relative;
+    animation: pulse 1s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      text-shadow: 0 0 5px #e91e63;
+    }
+    50% {
+      transform: scale(1.1);
+      text-shadow: 0 0 20px #ff4081;
+    }
+  }
+
+  .heart {
+    color: red;
+    font-size: 4rem;
+    display: inline-block;
+    animation: beat 1s infinite;
+  }
+
+  @keyframes beat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+  }
+</style>
+</head>
+<body>
+  <div class="heart-text">Я <span class="heart">❤️</span> Элю</div>
+</body>
+</html>
